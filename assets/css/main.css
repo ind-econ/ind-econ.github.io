@@ -21,6 +21,7 @@ section, summary, time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
+  color:#1b1f22;
   vertical-align: baseline; }
 
 article, aside, details, figcaption, figure,
@@ -121,7 +122,7 @@ a {
       color: inherit; }
 
 strong, b {
-  color: #3d4449;
+  color: #000000;
   font-weight: 600; }
 
 em, i {
@@ -131,7 +132,7 @@ p {
   margin: 0 0 2em 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #3d4449;
+  color: #000000;
   font-family: "Roboto Slab", serif;
   font-weight: 700;
   line-height: 1.5;
@@ -1068,7 +1069,7 @@ select {
   padding-right: 2.75em;
   text-overflow: ellipsis; }
   select option {
-    color: #3d4449;
+    color: #1b1f22;
     background: #ffffff; }
   select:focus::-ms-value {
     background-color: transparent; }
@@ -1899,7 +1900,7 @@ button,
     -webkit-transform: scaleX(-1);
     -ms-transform: scaleX(-1);
     transform: scaleX(-1);
-    color: #7f888f;
+    color: #366487;
     content: '\f002';
     cursor: default;
     display: block;
@@ -2054,7 +2055,7 @@ button,
       text-indent: 7.25em;
       width: 7.25em; }
       #sidebar .toggle:before {
-        color: #7f888f;
+        color: #313c44;
         margin-left: -0.0625em;
         margin-top: -0.25em;
         font-size: 1.1rem;
@@ -2190,7 +2191,7 @@ button,
 
 /* Footer */
 #footer .copyright {
-  color: #9fa3a6;
+  color: #000000;
   font-size: 0.9em; }
   #footer .copyright a {
     color: inherit; }
@@ -2217,7 +2218,7 @@ button,
     font-size: 0.9em;
     padding: 0.625em 0; }
     #menu ul a:hover, #menu ul span:hover {
-      color: #0E4C92; }
+      color: #0b58b1; }
     #menu ul a.opener, #menu ul span.opener {
       -moz-transition: color 0.2s ease-in-out;
       -webkit-transition: color 0.2s ease-in-out;
