@@ -1,0 +1,176 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="NIE Conference 2022" description="NIE Conference and PhD Symposium 2022">
+  <section class="container page-content">
+    <header class="section-header">
+      <h1 class="gradient-text">NIE Conference & PhD Symposium 2022</h1>
+    </header>
+
+    <div class="image-wrapper main-image">
+      <img src="/images/NIE2022/group1.jpg" alt="NIE 2022" class="responsive-image rounded-image shadow" />
+    </div>
+
+    <div class="content-wrapper">
+      <p>The School of Business and Economics (SBE) at Loughborough University hosted a two-day event: the PhD Symposium in Industrial Economics and the Network of Industrial Economists (NIE) conference on July 7 and 8, 2022.</p>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="content-wrapper">
+      <h2>PhD Symposium</h2>
+      <p class="date"><strong>July 7th, 2022</strong></p>
+      <p>The Symposium brought together early career economists (PhD students, Postdocs, etc.) to foster discussion and dissemination of research in all areas of industrial economics. A number of external academics acted as discussants and provided high-quality feedback.</p>
+
+      <h2>NIE Conference</h2>
+      <p class="date"><strong>July 8th, 2022</strong></p>
+      <p>The NIE conference consisted of presentations by five prominent industrial economists.</p>
+      <ul class="styled-list">
+        <li><a href="https://sites.google.com/site/allainml/home" target="_blank" rel="noopener">Marie-Laure Allain</a> (CNRS and CREST, Ecole Polytechnique)</li>
+        <li><a href="http://chloelecoq.org" target="_blank" rel="noopener">Chloé Le Coq</a> (University of Paris II Panthéon-Assas, CRED)</li>
+        <li><a href="https://toomas.hinnosaar.net" target="_blank" rel="noopener">Toomas Hinnosaar</a> (University of Nottingham)</li>
+        <li><a href="https://www.southampton.ac.uk/people/5x25wc/professor-carmine-ornaghi" target="_blank" rel="noopener">Carmine Ornaghi</a> (University of Southampton)</li>
+        <li><a href="https://www.wbs.ac.uk/about/person/john-thanassoulis/" target="_blank" rel="noopener">John Thanassoulis</a> (Warwick Business School)</li>
+      </ul>
+      <p><a href="/files/NIE-BooksofAbstracts-2022.pdf" class="btn btn-secondary">Conference Agenda & Book of Abstracts</a></p>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="content-wrapper">
+      <h2>Some memories from the conference</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="/images/NIE2022/presenter2.jpg" alt="NIE 2022 Presenter" class="responsive-image rounded-image shadow" />
+        </div>
+        <div class="gallery-item">
+          <img src="/images/NIE2022/presenter1.jpg" alt="Ana" class="responsive-image rounded-image shadow" />
+        </div>
+        <div class="gallery-item">
+          <img src="/images/NIE2022/theatre1.jpg" alt="Theatre" class="responsive-image rounded-image shadow" />
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-content {
+    padding: 4rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+  }
+
+  .date {
+    font-size: 1.1rem;
+    color: var(--accent-primary);
+    margin-bottom: 1rem;
+  }
+
+  .content-wrapper {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+  }
+
+  .content-wrapper p {
+    margin-bottom: 1.5rem;
+  }
+
+  .content-wrapper a {
+    color: var(--accent-primary);
+    text-decoration: underline;
+  }
+
+  .content-wrapper a:hover {
+    color: var(--accent-secondary);
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--divider);
+    margin: 3rem 0;
+  }
+
+  .image-wrapper.main-image {
+    margin: 2rem 0 3rem;
+  }
+
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: 100%;
+  }
+
+  .rounded-image {
+    border-radius: var(--border-radius-lg);
+  }
+
+  .shadow {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .styled-list {
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+  }
+
+  .styled-list li {
+    margin-bottom: 0.8rem;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: var(--border-radius-sm);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-family: var(--font-base);
+    text-decoration: none !important;
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--accent-primary) !important;
+    border: 1px solid var(--accent-primary);
+  }
+
+  .btn-secondary:hover {
+    background: rgba(59, 130, 246, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .gallery-item img {
+    height: 100%;
+    object-fit: cover;
+  }
+</style>

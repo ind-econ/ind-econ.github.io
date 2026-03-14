@@ -1,0 +1,75 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Research - Network of Industrial Economists" description="Research and working papers at the Network of Industrial Economists">
+  <section class="container page-content">
+    <header class="section-header">
+      <h1 class="gradient-text">Research</h1>
+    </header>
+
+    <div class="content-wrapper text-center">
+      <p class="featured-text"><strong>The working papers of the members will be shared here!</strong></p>
+
+      <hr class="divider" />
+
+      <div class="image-wrapper">
+        <img src="/images/stock-images/website-soon.jpg" alt="Website Coming Soon" class="responsive-image rounded-image shadow" />
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-content {
+    padding: 4rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 60vh;
+  }
+
+  .section-header {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .featured-text {
+    font-size: 1.25rem;
+    color: var(--text-primary);
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--divider);
+    margin: 2rem auto;
+    width: 50%;
+  }
+
+  .image-wrapper {
+    margin: 3rem auto;
+    max-width: 600px;
+  }
+
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .rounded-image {
+    border-radius: var(--border-radius-lg);
+  }
+
+  .shadow {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+</style>

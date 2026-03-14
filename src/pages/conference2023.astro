@@ -1,0 +1,164 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="NIE Conference 2023" description="NIE Conference and PhD Symposium 2023">
+  <section class="container page-content">
+    <header class="section-header">
+      <h1 class="gradient-text">NIE Conference & PhD Symposium 2023</h1>
+    </header>
+
+    <div class="image-wrapper main-image">
+      <img src="/images/NIE2023/conference2023-1.jpeg" alt="NIE 2023" class="responsive-image rounded-image shadow" />
+    </div>
+
+    <div class="content-wrapper">
+      <p>The Network of Industrial Economists PhD Symposium and the Conference took place at the <strong>University of Leicester School of Business</strong> on June 8 and 9th, 2023, respectively.</p>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="content-wrapper">
+      <h2>PhD Symposium</h2>
+      <p>PhD students and early career researchers in Industrial Economics presented their fascinating researches on June 8, 2023. Particular congratulations to Jinlin Wei from the University of Warwick, who was awarded the Best Paper prize of the Business and Industry Section of the Royal Statistical Society.</p>
+
+      <h2>NIE Conference</h2>
+      <p>The NIE Conference was held on June 9, 2023. Leading scholars in Industrial Economics presented their recent studies.</p>
+      
+      <p><a href="/files/NIE Conference & Symposium Programme.pdf" class="btn btn-secondary">Conference Agenda</a></p>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="content-wrapper">
+      <h2>Organising Committee</h2>
+      <ul class="styled-list">
+        <li>Piercarlo Zanchettin</li>
+        <li>Jacob Seifert</li>
+        <li>Mehman Ismayilli</li>
+      </ul>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="content-wrapper">
+      <h2>Some memories from the conference</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="/images/NIE2023/conference2023-3.jpeg" alt="Discussant Franco" class="responsive-image rounded-image shadow" />
+        </div>
+        <div class="gallery-item">
+          <img src="/images/NIE2023/conference2023-4.jpeg" alt="Jinlin Wei" class="responsive-image rounded-image shadow" />
+        </div>
+        <div class="gallery-item">
+          <img src="/images/NIE2023/conference2023-5.jpeg" alt="NIE 2023 memory" class="responsive-image rounded-image shadow" />
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-content {
+    padding: 4rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+  }
+
+  .content-wrapper {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+  }
+
+  .content-wrapper p {
+    margin-bottom: 1.5rem;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--divider);
+    margin: 3rem 0;
+  }
+
+  .image-wrapper.main-image {
+    margin: 2rem 0 3rem;
+  }
+
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: 100%;
+  }
+
+  .rounded-image {
+    border-radius: var(--border-radius-lg);
+  }
+
+  .shadow {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .styled-list {
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+  }
+
+  .styled-list li {
+    margin-bottom: 0.8rem;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: var(--border-radius-sm);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-family: var(--font-base);
+    text-decoration: none !important;
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--accent-primary) !important;
+    border: 1px solid var(--accent-primary);
+  }
+
+  .btn-secondary:hover {
+    background: rgba(59, 130, 246, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .gallery-item img {
+    height: 100%;
+    object-fit: cover;
+  }
+</style>

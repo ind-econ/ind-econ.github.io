@@ -1,0 +1,132 @@
+---
+interface Props {
+  title: string;
+  date: string;
+  location: string;
+  type: 'conference' | 'symposium';
+  description: string;
+  link?: string;
+}
+
+const { title, date, location, type, description, link = "#" } = Astro.props;
+---
+
+<div class="event-card hover-lift">
+  <div class="card-header">
+    <span class={`event-badge ${type === 'conference' ? 'badge-conf' : 'badge-symp'}`}>
+      {type === 'conference' ? 'Annual Conference' : 'Symposium'}
+    </span>
+    <span class="event-date">{date}</span>
+  </div>
+  
+  <h3 class="event-title">{title}</h3>
+  
+  <div class="event-meta">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+    <span>{location}</span>
+  </div>
+  
+  <p class="event-description">{description}</p>
+  
+  <div class="card-footer">
+    <a href={link} class="card-link">
+      Learn More 
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+    </a>
+  </div>
+</div>
+
+<style>
+  .event-card {
+    background: var(--bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: var(--border-radius-md);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .event-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+  }
+
+  .badge-conf {
+    background: rgba(59, 130, 246, 0.15);
+    color: var(--accent-secondary);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+  }
+
+  .badge-symp {
+    background: rgba(139, 92, 246, 0.15);
+    color: #a78bfa;
+    border: 1px solid rgba(139, 92, 246, 0.3);
+  }
+
+  .event-date {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 500;
+  }
+
+  .event-title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+  }
+
+  .event-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+
+  .event-meta svg {
+    opacity: 0.7;
+  }
+
+  .event-description {
+    flex-grow: 1;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .card-footer {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--divider);
+  }
+
+  .card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  .card-link svg {
+    transition: transform 0.2s ease;
+  }
+
+  .event-card:hover .card-link svg {
+    transform: translateX(4px);
+  }
+</style>

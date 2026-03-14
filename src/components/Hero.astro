@@ -1,0 +1,242 @@
+---
+
+---
+
+<section class="hero">
+  <!-- Dynamic glowing orb background elements -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+
+  <div class="container hero-content">
+    <h1 class="main-title animate-fade-up">Network of Industrial Economists</h1>
+    <h2 class="sub-title animate-fade-up delay-100">
+      Advancing <span class="text-gradient">Economic Theory</span>
+      <br />
+      Through Modern Networks
+    </h2>
+    <p class="hero-subtitle animate-fade-up delay-200">
+      A forum for interchange among university economists in the UK and the
+      world, and for interaction between academia, business, and government.
+    </p>
+
+    <div class="hero-actions animate-fade-up delay-300">
+      <a href="/conference2026" class="btn btn-primary btn-lg">Explore Events</a
+      >
+      <a href="#about" class="btn btn-outline btn-lg">Learn More</a>
+    </div>
+
+    <!-- Minimalist Data Visualization Representation -->
+    <div class="network-vis animate-fade-up delay-300">
+      <div class="node node-central"></div>
+      <div class="node n1"></div>
+      <div class="node n2"></div>
+      <div class="node n3"></div>
+      <div class="node n4"></div>
+
+      <!-- Lines connecting nodes using pseudo-elements from central node -->
+      <div class="connection c1"></div>
+      <div class="connection c2"></div>
+      <div class="connection c3"></div>
+      <div class="connection c4"></div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 5rem;
+  }
+
+  /* Abstract Background Orbs */
+  .orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    z-index: -1;
+    opacity: 0.4;
+  }
+
+  .orb-1 {
+    top: -10%;
+    right: -5%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, var(--accent-primary), transparent 70%);
+  }
+
+  .orb-2 {
+    bottom: -20%;
+    left: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, var(--accent-purple), transparent 70%);
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+  }
+
+  .main-title {
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    letter-spacing: -1.5px;
+    margin-bottom: 1.5rem;
+    max-width: 1000px;
+    background: linear-gradient(135deg, var(--text-primary) 0%, #cbd5e1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  }
+
+  .sub-title {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    max-width: 900px;
+    color: var(--text-secondary);
+  }
+
+  .hero-subtitle {
+    font-size: clamp(1.1rem, 2vw, 1.25rem);
+    max-width: 650px;
+    margin-bottom: 3rem;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 5rem;
+  }
+
+  .btn-lg {
+    padding: 0.8rem 2rem;
+    font-size: 1.05rem;
+  }
+
+  .btn-outline {
+    background: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--text-muted);
+  }
+
+  .btn-outline:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--text-primary);
+  }
+
+  /* Network Visualization Animation */
+  .network-vis {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 250px;
+    margin-top: 2rem;
+  }
+
+  .node {
+    position: absolute;
+    border-radius: 50%;
+    background: var(--accent-primary);
+    box-shadow: 0 0 15px var(--accent-glow);
+    animation: float 4s ease-in-out infinite alternate;
+  }
+
+  .node-central {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: var(--text-primary);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+    z-index: 2;
+    animation: float 6s ease-in-out infinite alternate-reverse;
+  }
+
+  .n1 {
+    top: 20%;
+    left: 30%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0.5s;
+  }
+  .n2 {
+    top: 80%;
+    left: 25%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 1.2s;
+    background: var(--accent-purple);
+  }
+  .n3 {
+    top: 15%;
+    right: 28%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2.1s;
+  }
+  .n4 {
+    top: 75%;
+    right: 32%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 0.8s;
+    background: var(--accent-secondary);
+  }
+
+  .connection {
+    position: absolute;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(59, 130, 246, 0.3),
+      transparent
+    );
+    transform-origin: left center;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+  }
+
+  .c1 {
+    width: 150px;
+    transform: rotate(-140deg);
+  }
+  .c2 {
+    width: 180px;
+    transform: rotate(145deg);
+  }
+  .c3 {
+    width: 130px;
+    transform: rotate(-45deg);
+  }
+  .c4 {
+    width: 160px;
+    transform: rotate(45deg);
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0) translateX(0);
+    }
+    100% {
+      transform: translateY(-15px) translateX(10px);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .network-vis {
+      display: none;
+    }
+  }
+</style>
