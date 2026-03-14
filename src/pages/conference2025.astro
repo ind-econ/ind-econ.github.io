@@ -23,34 +23,43 @@ import Layout from '../layouts/Layout.astro';
       <div class="main-column animate-fade-up delay-100">
         
         <section class="info-section">
-          <h2>NIE Early Career Researchers' Symposium - 26 June 2025</h2>
-          <h3>Call for papers</h3>
-          <p>We invite submissions of extended abstracts in theoretical and empirical industrial economics for the 2025 <strong>NIE ECR Symposium in Industrial Economics</strong>, to be held on <strong>Thursday 26th June 2025</strong> at Nottingham University Business School.</p>
-          <p>The Symposium brings together early-career economists (PhD students and those who completed their PhD in the past 5 years) to foster discussion and dissemination of research in all areas of industrial economics and other related fields in a friendly environment. A number of external academics will join our internal faculty members, acting as discussants and providing high-quality feedback. The extended abstracts submitted for the symposium can be finished papers, thesis chapters, or working papers. Financial assistance towards UK travel and accommodation may be available for presenters.</p>
-          <p>The Symposium is generously sponsored by <strong>Charles River Associates</strong>, the global consulting firm whose representatives will attend the symposium and deliver a keynote presentation. They will award a prize for the best symposium paper.</p>
-          
-
+          <h2>Overview</h2>
+          <p>Nottingham University Business School was proud to host the annual Network of Industrial Economists (NIE) Symposium and Conference on 26 and 27 June 2025. The two-day event brought together academics, researchers, students, and practitioners to review current developments in industrial economics and policy.</p>
+          <p>The NIE is the UK’s oldest network of academic economists and practitioners with expertise in industrial economics and policy. Established in the 1970s, it has evolved into a vital forum for discussing academic research and fostering collaboration among academia, business, consultancy, and government agencies.</p>
+          <p>Bringing together both early-career and established economists from the UK and overseas, the annual event features renowned speakers and provides a platform for debate and knowledge exchange.</p>
+          <p>The conference highlighted the Business School’s commitment to research excellence and real-world impact. It also aligned with the School’s strategic priorities, particularly its engagement with policy-relevant issues such as growth, productivity, and digitalisation, which are key themes within the UK Government’s evolving Industrial Strategy. Discussions explored the strengths and weaknesses of these plans and the challenges associated with implementation.</p>
         </section>
 
         <section class="info-section">
-          <h2>NIE Annual Conference - 27 June 2025</h2>
-
-
-          <p>The NIE conference features presentations by leading industrial economists, academists, and practitioners, including:</p>
-          <ul class="styled-list">
-            <li><strong>Luke Garrod</strong> (Loughborough University)</li>
-            <li><strong>Rajssa Mechelli</strong> (Competition and Markets Authority)</li>
-            <li><strong>Joel Stiebale</strong> (DICE Heinrich Heine University, Germany)</li>
-            <li><strong>Tommaso Valletti</strong> (Imperial College, London)</li>
-            <li><strong>Marit Hinnosaar</strong> (University of Nottingham)</li>
-          </ul>
-
-          <div class="registration-box">
-            <h3>Registration</h3>
-            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=7qe9Z4D970GskTWEGCkKHvVRfLe1gRNPmORh1mUSk8dUM0lBSURXS1dNRTI1R01TVUtZRzJHWEZVVi4u" target="_blank" class="btn btn-primary btn-lg">Register Here</a>
+          <h2>Day One: PhD Symposium</h2>
+          <p>The event opened with a PhD Symposium where doctoral students presented their research to peers and expert panels. Sponsored by Charles River Associates (CRA), a leading global consultancy, the symposium provided early-career researchers a valuable opportunity to gain feedback and recognition.</p>
+          <p>The winner of the Best Paper Prize was Augustus Smith from the University of Oxford, whose research was considered a novel contribution to knowledge with policy-relevant implications.</p>
+          <p>Domilė Butkevičiūtė, Principal at Charles River Associates, presented the award and commented: “Charles River Associates proudly sponsored the University of Nottingham’s Network of Industrial Economists Symposium, which reflects our commitment to supporting industrial economists and their ability to address pressing industry challenges. We highly value academic research, which is fundamental to the firm's work.”</p>
+          
+          <div class="action-box">
+            <a href="/files/NIE_Symposium2025.pdf" target="_blank" class="btn btn-outline">View PhD Symposium Programme</a>
           </div>
 
-          <p class="sponsorship">We gratefully acknowledge financial support from Charles River Associates and Nottingham University Business School.</p>
+          <div class="image-wrapper mt-2">
+            <img src="/images/NIE2025/NIE_2025_Winner.JPG" alt="NIE 2025 Best Paper Award Winner Augustus Smith" class="responsive-image rounded-image shadow" />
+          </div>
+        </section>
+
+        <section class="info-section">
+          <h2>Day Two: Conference</h2>
+          <p>The second day featured keynote talks with leading UK and international economists, addressing key issues in industrial policy and economic development. The participants also witnessed a lively roundtable discussion on the impact of AI on markets and competition by a panel of economics scholars and practitioners.</p>
+          <p>Event organiser Professor Monica Giulietti, Professor of Industrial Economics at Nottingham University Business School, said:</p>
+          <blockquote class="italic-quote">“We were delighted to host such a vibrant and thoughtful exchange of ideas. The NIE continues to be an important forum for connecting academic research with real-world challenges in a rapidly changing economic environment.”</blockquote>
+
+          <div class="action-box">
+            <a href="/files/NIE_Conference2025.pdf" target="_blank" class="btn btn-primary">View Conference Programme</a>
+          </div>
+
+          <div class="gallery-grid mt-2">
+             <img src="/images/NIE2025/NIE_2025_1.JPG" alt="NIE Conference 2025 Photo 1" class="responsive-image rounded-image shadow" />
+             <img src="/images/NIE2025/NIE_2025_2.JPG" alt="NIE Conference 2025 Photo 2" class="responsive-image rounded-image shadow" />
+             <img src="/images/NIE2025/NIE_2025_4.JPG" alt="NIE Conference 2025 Photo 4" class="responsive-image rounded-image shadow" />
+          </div>
         </section>
       </div>
 
@@ -261,6 +270,25 @@ import Layout from '../layouts/Layout.astro';
     color: var(--text-muted);
     border-top: 1px solid var(--divider);
     padding-top: 1rem;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .mt-2 {
+    margin-top: 2rem;
+  }
+
+  .italic-quote {
+    font-style: italic;
+    border-left: 4px solid var(--accent-primary);
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+    color: var(--text-secondary);
   }
 
   .side-widget h3 {
