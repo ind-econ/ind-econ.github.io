@@ -15,6 +15,7 @@
   --text-muted: #94a3b8; /* Muted slate */
 
   --divider: rgba(255, 255, 255, 0.1);
+  --navbar-bg: rgba(5, 9, 20, 0.75);
 
   /* Typography */
   --font-base:
@@ -29,6 +30,41 @@
   --border-radius-lg: 24px;
   --max-width: 1200px;
 }
+
+/* ── Light Theme ─────────────────────────────────────────── */
+[data-theme="light"] {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #eef2f7;
+  --bg-card: rgba(255, 255, 255, 0.8);
+  --bg-card-hover: rgba(255, 255, 255, 0.97);
+
+  --accent-primary: #2563eb;
+  --accent-secondary: #3b82f6;
+  --accent-glow: rgba(37, 99, 235, 0.2);
+  --accent-purple: #7c3aed;
+
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+
+  --divider: rgba(0, 0, 0, 0.1);
+  --navbar-bg: rgba(248, 250, 252, 0.85);
+}
+
+[data-theme="light"] body {
+  background-image:
+    radial-gradient(
+      circle at 15% 50%,
+      rgba(37, 99, 235, 0.06) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 85% 30%,
+      rgba(124, 58, 237, 0.06) 0%,
+      transparent 50%
+    );
+}
+/* ───────────────────────────────────────────────────────── */
 
 /* Reset & Base Styles */
 *,
